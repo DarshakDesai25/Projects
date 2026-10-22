@@ -1,0 +1,4 @@
+results/*.pt
+results/*.npz
+__pycache__/
+.DS_Store
