@@ -53,12 +53,19 @@ def detection(glrt, cnn):
         said_two = (cnn["prob"] > 0.5).astype(float)
         fa = said_two[cnn["labels"] < 0.5].mean()
         ax.plot(CENTERS, binned(cnn["seps"], said_two, cnn["labels"]), "s-",
-                label=f"CNN (false alarm {fa:.1%})")
+                label=f"CNN, default threshold (false alarm {fa:.1%})")
+        if glrt is not None:
+            # fair comparison: set the CNN threshold to give the same false alarm rate
+            target = (glrt["stats"] > glrt["threshold"])[glrt["labels"] < 0.5].mean()
+            thr = np.quantile(cnn["prob"][cnn["labels"] < 0.5], 1 - target)
+            said_two = (cnn["prob"] > thr).astype(float)
+            ax.plot(CENTERS, binned(cnn["seps"], said_two, cnn["labels"]), "s--",
+                    label=f"CNN, matched threshold (false alarm {target:.1%})")
     ax.axvline(1.0, color="gray", ls="--", lw=1)
-    ax.text(1.02, 0.05, "Rayleigh limit", color="gray")
+    ax.text(1.02, 0.6, "Rayleigh limit", color="gray")
     ax.set_xlabel("true separation (Rayleigh units)")
     ax.set_ylabel("detection rate for two sources")
-    ax.set_ylim(0, 1.02); ax.grid(alpha=0.3); ax.legend(loc="lower right")
+    ax.set_ylim(0, 1.02); ax.grid(alpha=0.3); ax.legend(loc="lower right", fontsize=8)
     fig.tight_layout()
     fig.savefig(os.path.join(R, "detection_vs_separation.png"), dpi=150)
 
@@ -67,7 +74,11 @@ def separation_error(sim, glrt, cnn):
     fig, ax = plt.subplots(figsize=(6.4, 4.2))
     d = np.linspace(0.05, 1.5, 40)
     crb = [1 / np.sqrt(sim.fisher_separation(v)) for v in d]
-    ax.plot(d, crb, "k-", lw=1.5, label="classical Cramer Rao bound (direct imaging)")
+    ax.plot(d, crb, "k-", lw=1.5, label="Cramer Rao bound, only separation unknown")
+    import fisher_info as fi
+    free = ("cx", "cy", "sep", "theta", "flux", "bg")
+    ax.plot(d, [fi.separation_bound(sim, v, 0.5, free)[0] for v in d], "k--", lw=1.2,
+            label="Cramer Rao bound, center, angle, brightness, background also unknown")
     for res, name, mk in [(glrt, "maximum likelihood fit", "o-"), (cnn, "CNN", "s-")]:
         if res is None:
             continue
@@ -77,7 +88,7 @@ def separation_error(sim, glrt, cnn):
     ax.set_yscale("log")
     ax.set_xlabel("true separation (Rayleigh units)")
     ax.set_ylabel("separation RMSE (Rayleigh units)")
-    ax.grid(alpha=0.3, which="both"); ax.legend()
+    ax.grid(alpha=0.3, which="both"); ax.legend(fontsize=7, loc="upper right")
     fig.tight_layout()
     fig.savefig(os.path.join(R, "separation_error.png"), dpi=150)
 

@@ -1,0 +1,236 @@
+[
+  {
+    "condition": {
+      "name": "matches training",
+      "psf_scale": 1.0,
+      "astig": 1.0,
+      "blur_px": 0.0,
+      "ratio": 0.5,
+      "jitter_px": 1.0,
+      "photons": 1000.0,
+      "background": 2.0
+    },
+    "cnn": {
+      "auc": 0.9556491374969482,
+      "auc_ci": [
+        0.9490642338991165,
+        0.9628055617213249
+      ],
+      "rmse": 0.052848126739263535,
+      "rmse_ci": [
+        0.04976625544950366,
+        0.05569836674258113
+      ],
+      "false_alarm_at_half": 0.02275025278058645,
+      "detect_hard_at_half": 0.6261682242990654
+    }
+  },
+  {
+    "condition": {
+      "name": "lens blurs 20% more",
+      "psf_scale": 1.2,
+      "astig": 1.0,
+      "blur_px": 0.0,
+      "ratio": 0.5,
+      "jitter_px": 1.0,
+      "photons": 1000.0,
+      "background": 2.0
+    },
+    "cnn": {
+      "auc": 0.92081618309021,
+      "auc_ci": [
+        0.9118216693401336,
+        0.9292720079421997
+      ],
+      "rmse": 0.26354631781578064,
+      "rmse_ci": [
+        0.25572608783841133,
+        0.2705150909721851
+      ],
+      "false_alarm_at_half": 1.0,
+      "detect_hard_at_half": 1.0
+    }
+  },
+  {
+    "condition": {
+      "name": "astigmatism",
+      "psf_scale": 1.0,
+      "astig": 1.35,
+      "blur_px": 0.0,
+      "ratio": 0.5,
+      "jitter_px": 1.0,
+      "photons": 1000.0,
+      "background": 2.0
+    },
+    "cnn": {
+      "auc": 0.9437321424484253,
+      "auc_ci": [
+        0.9362172648310662,
+        0.9505060493946076
+      ],
+      "rmse": 0.10986527800559998,
+      "rmse_ci": [
+        0.10511603355407714,
+        0.11461063586175442
+      ],
+      "false_alarm_at_half": 0.4543160020191822,
+      "detect_hard_at_half": 0.8567708333333334
+    }
+  },
+  {
+    "condition": {
+      "name": "defocus blur",
+      "psf_scale": 1.0,
+      "astig": 1.0,
+      "blur_px": 0.8,
+      "ratio": 0.5,
+      "jitter_px": 1.0,
+      "photons": 1000.0,
+      "background": 2.0
+    },
+    "cnn": {
+      "auc": 0.9396864771842957,
+      "auc_ci": [
+        0.9321324676275253,
+        0.9475534364581109
+      ],
+      "rmse": 0.18192437291145325,
+      "rmse_ci": [
+        0.17583832442760466,
+        0.1881909802556038
+      ],
+      "false_alarm_at_half": 1.0,
+      "detect_hard_at_half": 1.0
+    }
+  },
+  {
+    "condition": {
+      "name": "brightness 70/30",
+      "psf_scale": 1.0,
+      "astig": 1.0,
+      "blur_px": 0.0,
+      "ratio": 0.7,
+      "jitter_px": 1.0,
+      "photons": 1000.0,
+      "background": 2.0
+    },
+    "cnn": {
+      "auc": 0.9506798982620239,
+      "auc_ci": [
+        0.9424531906843185,
+        0.9577819973230361
+      ],
+      "rmse": 0.0680236741900444,
+      "rmse_ci": [
+        0.06496575437486171,
+        0.0713501213118434
+      ],
+      "false_alarm_at_half": 0.02371732817037754,
+      "detect_hard_at_half": 0.5929078014184397
+    }
+  },
+  {
+    "condition": {
+      "name": "brightness 90/10",
+      "psf_scale": 1.0,
+      "astig": 1.0,
+      "blur_px": 0.0,
+      "ratio": 0.9,
+      "jitter_px": 1.0,
+      "photons": 1000.0,
+      "background": 2.0
+    },
+    "cnn": {
+      "auc": 0.9178712964057922,
+      "auc_ci": [
+        0.9078863233327865,
+        0.9281875714659691
+      ],
+      "rmse": 0.15044887363910675,
+      "rmse_ci": [
+        0.14424104243516922,
+        0.15769318901002408
+      ],
+      "false_alarm_at_half": 0.025717111770524232,
+      "detect_hard_at_half": 0.35286284953395475
+    }
+  },
+  {
+    "condition": {
+      "name": "center off by up to 3 px",
+      "psf_scale": 1.0,
+      "astig": 1.0,
+      "blur_px": 0.0,
+      "ratio": 0.5,
+      "jitter_px": 3.0,
+      "photons": 1000.0,
+      "background": 2.0
+    },
+    "cnn": {
+      "auc": 0.9152294993400574,
+      "auc_ci": [
+        0.9068182781338692,
+        0.9239276483654976
+      ],
+      "rmse": 0.37069347500801086,
+      "rmse_ci": [
+        0.3572373196482658,
+        0.3852793872356415
+      ],
+      "false_alarm_at_half": 0.6623441396508728,
+      "detect_hard_at_half": 0.9013157894736842
+    }
+  },
+  {
+    "condition": {
+      "name": "dim and noisy",
+      "psf_scale": 1.0,
+      "astig": 1.0,
+      "blur_px": 0.0,
+      "ratio": 0.5,
+      "jitter_px": 1.0,
+      "photons": 300.0,
+      "background": 5.0
+    },
+    "cnn": {
+      "auc": 0.8857561349868774,
+      "auc_ci": [
+        0.8750045537948609,
+        0.8960131496191025
+      ],
+      "rmse": 0.524164080619812,
+      "rmse_ci": [
+        0.514190000295639,
+        0.5331149071455001
+      ],
+      "false_alarm_at_half": 1.0,
+      "detect_hard_at_half": 1.0
+    }
+  },
+  {
+    "condition": {
+      "name": "everything at once",
+      "psf_scale": 1.0,
+      "astig": 1.25,
+      "blur_px": 0.5,
+      "ratio": 0.7,
+      "jitter_px": 2.0,
+      "photons": 600.0,
+      "background": 3.0
+    },
+    "cnn": {
+      "auc": 0.8708085417747498,
+      "auc_ci": [
+        0.8597209453582764,
+        0.8802889630198478
+      ],
+      "rmse": 0.3270025849342346,
+      "rmse_ci": [
+        0.31474696695804594,
+        0.3378019012510777
+      ],
+      "false_alarm_at_half": 0.9994974874371859,
+      "detect_hard_at_half": 1.0
+    }
+  }
+]

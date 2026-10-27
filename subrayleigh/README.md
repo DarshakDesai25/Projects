@@ -16,9 +16,21 @@ The Rayleigh criterion is a rule of thumb, not a hard law. With a good model of 
 
 **Classical baseline** (`baseline_glrt.py`). For each image, fits a one source model and a two source model by Poisson maximum likelihood, then uses the likelihood ratio to decide one vs two. The two source fit also gives a separation estimate. This is the standard approach and the fair bar for the CNN to meet.
 
-**Theoretical limit**. Computes the classical Cramer Rao bound on separation from the Fisher information of the pixel data. No unbiased estimator using direct imaging can beat this curve.
+**Theoretical limit** (`fisher_info.py`). Computes the Fisher information about the separation and the Cramer Rao bound that follows from it, including what happens when the center, orientation, brightness, background or brightness split are also unknown. No unbiased estimator using direct imaging can beat this curve.
 
 **CNN** (`model.py`, `train.py`). A small convolutional network with two heads, one for one vs two sources and one for separation. Trained on simulated data with flip and rotation augmentation.
+
+## Assumptions
+
+Every result in this repo depends on these choices, so they are listed in one place.
+
+1. **The two sources are incoherent.** Their intensities add and the phase between them does not matter. This is the right model for independent emitters such as stars or fluorescent molecules. Coherent sources interfere, so the image would depend on their relative phase. Neither the bounds nor the CNN here cover that case.
+2. **The two sources have equal brightness** in the main results. Unequal brightness is analyzed with Fisher information below. The CNN was trained only on equal brightness.
+3. **The lens is known exactly.** The point spread function is a perfect Airy pattern with no aberrations, and it is the same at training and test time.
+4. **Noise is Poisson shot noise plus a flat background.** The settings are 1,000 signal photons and 2 background photons per pixel on a 32 by 32 image, with a Rayleigh radius of 5 pixels.
+5. **The pair sits within 1 pixel of the image center** and has a random orientation.
+6. **Part 2 uses a one dimensional Gaussian point spread function**, not the Airy pattern.
+7. **The CNN has only been tested on images from its own simulator.**
 
 ## Results
 
@@ -35,6 +47,38 @@ Settings are a 32 by 32 pixel image, Rayleigh radius of 5 pixels, 1,000 signal p
 **Speed.** The classical fit takes about half a second per image on a laptop CPU because it runs iterative optimization with several starting points. The CNN processes an image in a single forward pass, and `train.py` prints its inference time per image.
 
 The classical baseline was evaluated on only 250 held out images, so each separation bin holds roughly 25 samples and its curves are noisier than the CNN's.
+
+## What the Fisher information says
+
+Fisher information measures how much one image can tell you about the separation. The smallest error any unbiased method can reach is 1 over its square root, which is the Cramer Rao bound. `fisher_info.py` computes it from the same simulator the CNN was trained on. It differentiates the expected image with respect to each unknown and weights the result by the photon noise.
+
+With only the separation unknown, the numbers are as follows.
+
+| Separation (Rayleigh units) | Fisher information | Smallest possible error |
+| --- | --- | --- |
+| 0.1 | 74 | 0.116 |
+| 0.25 | 381 | 0.051 |
+| 0.5 | 921 | 0.033 |
+| 1.0 | 1358 | 0.027 |
+
+A real measurement also has to find the center of the pair, its orientation, the total brightness and the background, and sometimes the brightness split between the two sources. Not knowing these costs information. The table shows the smallest possible error in Rayleigh units, with the effective information in brackets.
+
+| Case | d = 0.1 | d = 0.25 | d = 0.5 | d = 1.0 |
+| --- | --- | --- | --- | --- |
+| Only separation unknown | 0.116 (74) | 0.051 (381) | 0.033 (921) | 0.027 (1358) |
+| Center, angle, brightness, background also unknown | 0.119 (71) | 0.052 (370) | 0.033 (907) | 0.027 (1349) |
+| 70/30 sources, split known | 0.141 (50) | 0.062 (264) | 0.040 (630) | 0.033 (916) |
+| 70/30 sources, split unknown | 0.786 (1.6) | 0.144 (48) | 0.054 (343) | 0.033 (895) |
+| 90/10 sources, split known | 0.327 (9.3) | 0.140 (51) | 0.090 (123) | 0.077 (167) |
+| 90/10 sources, split unknown | 3.615 (0.1) | 0.618 (2.6) | 0.189 (28) | 0.080 (155) |
+
+![fisher](results/fisher_information.png)
+
+Three things stand out.
+
+1. **My first plot was only slightly optimistic.** It assumed everything except the separation was known. For equal brightness sources, estimating the center, angle, brightness and background too costs only about 2 to 3 percent in the smallest possible error, or about 4 percent of the information at the closest separation.
+2. **Equal brightness is the assumption that matters most.** With a 70/30 split that is not known in advance, the best possible error at 0.1 Rayleigh units is about 0.79, so a camera cannot resolve the pair at all. With a 90/10 split it is hopeless below about 0.25. My explanation is that the center of light moves when one source is brighter, so a bright and dim pair looks almost the same as a single source that is slightly off center. This is a limit on any method using the image, including the CNN.
+3. **The CNN here was trained only on equal brightness,** so its results apply only to that case.
 
 ## What I find most interesting
 
@@ -80,6 +124,7 @@ python test_shapes.py
 python baseline_glrt.py --n 500
 python train.py --epochs 15 --n-train 60000
 python plots.py
+python fisher_info.py
 python compare_spade.py
 ```
 
@@ -87,4 +132,4 @@ Training uses a GPU or Apple silicon if available and falls back to CPU.
 
 ## Limitations and next steps
 
-This version assumes equal brightness sources, a perfect known aperture, no aberrations and direct intensity imaging only. Next I want to add unequal brightness, random photon counts and simple aberrations, and to test a CNN on noisy SPADE outputs with crosstalk, where the simple closed form estimators break down.
+The CNN has only been evaluated on images from its own simulator, with a perfect known lens, equal brightness sources and a pair near the image center. Real cameras differ in all three ways, and the Fisher analysis above shows that unequal brightness alone limits what any method can do at small separations. The most important next step is to test the CNN and the classical fit on images with a mismatched lens, unequal brightness, an off center pair and different noise levels, and to report how much each degrades. After that I want to test a CNN on noisy mode sorting outputs with crosstalk, where the simple closed form estimators break down. The coherent source case is not covered at all.
