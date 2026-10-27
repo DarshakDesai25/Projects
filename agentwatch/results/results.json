@@ -1,0 +1,34 @@
+{
+  "seeds": 10,
+  "incidents_per_run": 26,
+  "summary": {
+    "0.25": {
+      "Learned baseline": {
+        "caught": 229,
+        "total": 260
+      },
+      "Fixed rules, tuned": {
+        "caught": 186,
+        "total": 260
+      },
+      "Fixed rules, default": {
+        "caught": 180,
+        "total": 260
+      }
+    },
+    "1.0": {
+      "Learned baseline": {
+        "caught": 249,
+        "total": 260
+      },
+      "Fixed rules, tuned": {
+        "caught": 191,
+        "total": 260
+      },
+      "Fixed rules, default": {
+        "caught": 180,
+        "total": 260
+      }
+    }
+  }
+}
