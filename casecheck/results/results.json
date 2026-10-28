@@ -1,0 +1,262 @@
+{
+  "0": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "f1_ci": [
+      1.0,
+      1.0
+    ],
+    "grounded": 1.0,
+    "inc_recall": 1.0,
+    "inc_precision": 1.0,
+    "mistakes": {
+      "MISSED": 0.0,
+      "WRONG_VALUE": 0.0,
+      "NEGATION_ERROR": 0.0,
+      "WRONG_PERSON": 0.0,
+      "UNGROUNDED": 0.0,
+      "EXTRA": 0.0
+    },
+    "by_type": {
+      "ACCIDENT_DATE": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "VISIT": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "DIAGNOSIS": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "MEDICATION": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "PRIOR_CONDITION": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "TESTIFIED_ACCIDENT_DATE": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "TESTIFIED_NO_PRIOR": {
+        "recall": 1.0,
+        "precision": 1.0
+      }
+    },
+    "n_cases": 100,
+    "n_truth": 1427
+  },
+  "1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "f1_ci": [
+      1.0,
+      1.0
+    ],
+    "grounded": 1.0,
+    "inc_recall": 1.0,
+    "inc_precision": 1.0,
+    "mistakes": {
+      "MISSED": 0.0,
+      "WRONG_VALUE": 0.0,
+      "NEGATION_ERROR": 0.0,
+      "WRONG_PERSON": 0.0,
+      "UNGROUNDED": 0.0,
+      "EXTRA": 0.0
+    },
+    "by_type": {
+      "ACCIDENT_DATE": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "VISIT": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "DIAGNOSIS": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "MEDICATION": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "PRIOR_CONDITION": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "TESTIFIED_ACCIDENT_DATE": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "TESTIFIED_NO_PRIOR": {
+        "recall": 1.0,
+        "precision": 1.0
+      }
+    },
+    "n_cases": 100,
+    "n_truth": 1395
+  },
+  "2": {
+    "precision": 0.9294336118848654,
+    "recall": 0.9742092457420924,
+    "f1": 0.9512948443810881,
+    "f1_ci": [
+      0.9451293213774375,
+      0.9573220588474465
+    ],
+    "grounded": 1.0,
+    "inc_recall": 0.6530612244897959,
+    "inc_precision": 1.0,
+    "mistakes": {
+      "MISSED": 2.579075425790754,
+      "WRONG_VALUE": 0.0,
+      "NEGATION_ERROR": 5.888077858880779,
+      "WRONG_PERSON": 1.508515815085158,
+      "UNGROUNDED": 0.0,
+      "EXTRA": 0.0
+    },
+    "by_type": {
+      "ACCIDENT_DATE": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "VISIT": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "DIAGNOSIS": {
+        "recall": 1.0,
+        "precision": 0.8578143360752056
+      },
+      "MEDICATION": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "PRIOR_CONDITION": {
+        "recall": 0.6349206349206349,
+        "precision": 0.5633802816901409
+      },
+      "TESTIFIED_ACCIDENT_DATE": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "TESTIFIED_NO_PRIOR": {
+        "recall": 0.7391304347826086,
+        "precision": 1.0
+      }
+    },
+    "n_cases": 100,
+    "n_truth": 2055
+  },
+  "3": {
+    "precision": 0.931223371880706,
+    "recall": 0.9832904884318766,
+    "f1": 0.9565489215379807,
+    "f1_ci": [
+      0.9520223227677961,
+      0.9610023708121729
+    ],
+    "grounded": 1.0,
+    "inc_recall": 0.6744186046511628,
+    "inc_precision": 1.0,
+    "mistakes": {
+      "MISSED": 1.6709511568123394,
+      "WRONG_VALUE": 0.0,
+      "NEGATION_ERROR": 6.394601542416453,
+      "WRONG_PERSON": 0.8676092544987146,
+      "UNGROUNDED": 0.0,
+      "EXTRA": 0.0
+    },
+    "by_type": {
+      "ACCIDENT_DATE": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "VISIT": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "DIAGNOSIS": {
+        "recall": 1.0,
+        "precision": 0.8593639575971731
+      },
+      "MEDICATION": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "PRIOR_CONDITION": {
+        "recall": 0.5576923076923077,
+        "precision": 0.5178571428571429
+      },
+      "TESTIFIED_ACCIDENT_DATE": {
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "TESTIFIED_NO_PRIOR": {
+        "recall": 0.7734375,
+        "precision": 1.0
+      }
+    },
+    "n_cases": 100,
+    "n_truth": 3112
+  },
+  "4": {
+    "precision": 0.9117741418030157,
+    "recall": 0.9224277831872768,
+    "f1": 0.9170700225879316,
+    "f1_ci": [
+      0.9087676743422365,
+      0.9245718950153069
+    ],
+    "grounded": 1.0,
+    "inc_recall": 0.3902439024390244,
+    "inc_precision": 1.0,
+    "mistakes": {
+      "MISSED": 6.815968841285297,
+      "WRONG_VALUE": 0.9412528399870173,
+      "NEGATION_ERROR": 6.815968841285297,
+      "WRONG_PERSON": 0.9737098344693281,
+      "UNGROUNDED": 0.0,
+      "EXTRA": 0.19474196689386564
+    },
+    "by_type": {
+      "ACCIDENT_DATE": {
+        "recall": 0.88,
+        "precision": 1.0
+      },
+      "VISIT": {
+        "recall": 0.945,
+        "precision": 0.9895287958115183
+      },
+      "DIAGNOSIS": {
+        "recall": 0.9379084967320261,
+        "precision": 0.8294797687861272
+      },
+      "MEDICATION": {
+        "recall": 0.9467455621301775,
+        "precision": 1.0
+      },
+      "PRIOR_CONDITION": {
+        "recall": 0.6153846153846154,
+        "precision": 0.5633802816901409
+      },
+      "TESTIFIED_ACCIDENT_DATE": {
+        "recall": 0.86,
+        "precision": 1.0
+      },
+      "TESTIFIED_NO_PRIOR": {
+        "recall": 0.7241379310344828,
+        "precision": 1.0
+      }
+    },
+    "n_cases": 100,
+    "n_truth": 3081
+  }
+}
