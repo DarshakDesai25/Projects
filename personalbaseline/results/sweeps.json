@@ -1,0 +1,788 @@
+{
+ "sigma_b": {
+  "values": [
+   0.05,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.6,
+   0.8
+  ],
+  "change": "level",
+  "results": [
+   {
+    "Lab test, monthly": {
+     "caught": 0.211,
+     "lo": 0.19863569471809758,
+     "hi": 0.22391888386463146,
+     "delay": 33.0,
+     "false_alarm": 0.041
+    },
+    "Wearable, population range": {
+     "caught": 0.988,
+     "lo": 0.9841266588573202,
+     "hi": 0.9909368901102512,
+     "delay": 18.0,
+     "false_alarm": 0.0525
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.19225,
+     "lo": 0.18033526113098805,
+     "hi": 0.20475529789612226,
+     "delay": 33.0,
+     "false_alarm": 0.043
+    },
+    "Wearable, population range": {
+     "caught": 0.8625,
+     "lo": 0.8514793671136617,
+     "hi": 0.8728250109616348,
+     "delay": 20.0,
+     "false_alarm": 0.05175
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.1425,
+     "lo": 0.13200973445745637,
+     "hi": 0.15367629268207875,
+     "delay": 32.0,
+     "false_alarm": 0.03825
+    },
+    "Wearable, population range": {
+     "caught": 0.45925,
+     "lo": 0.44385284648822104,
+     "hi": 0.4747253510109007,
+     "delay": 22.0,
+     "false_alarm": 0.046
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.10775,
+     "lo": 0.09851459972597398,
+     "hi": 0.11773811117048105,
+     "delay": 30.0,
+     "false_alarm": 0.04025
+    },
+    "Wearable, population range": {
+     "caught": 0.25925,
+     "lo": 0.24590487302215344,
+     "hi": 0.27305711588370124,
+     "delay": 22.0,
+     "false_alarm": 0.049
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.16975,
+     "lo": 0.15843396401575388,
+     "hi": 0.18169977154461392,
+     "delay": 21.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0565,
+     "lo": 0.04976112256405355,
+     "hi": 0.06408993488037681,
+     "delay": 27.0,
+     "false_alarm": 0.04125
+    },
+    "Wearable, population range": {
+     "caught": 0.09625,
+     "lo": 0.08749347295523471,
+     "hi": 0.10578130594710747,
+     "delay": 17.0,
+     "false_alarm": 0.046
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.04875,
+     "lo": 0.04249852188811083,
+     "hi": 0.05586740747333044,
+     "delay": 25.0,
+     "false_alarm": 0.042
+    },
+    "Wearable, population range": {
+     "caught": 0.06975,
+     "lo": 0.0622617954228575,
+     "hi": 0.07806383584087682,
+     "delay": 14.0,
+     "false_alarm": 0.0445
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   }
+  ]
+ },
+ "sigma_w": {
+  "values": [
+   0.05,
+   0.1,
+   0.2,
+   0.3,
+   0.4
+  ],
+  "change": "level",
+  "results": [
+   {
+    "Lab test, monthly": {
+     "caught": 0.09625,
+     "lo": 0.08749347295523471,
+     "hi": 0.10578130594710747,
+     "delay": 28.0,
+     "false_alarm": 0.0435
+    },
+    "Wearable, population range": {
+     "caught": 0.2115,
+     "lo": 0.19912427237754626,
+     "hi": 0.22442934672666598,
+     "delay": 15.0,
+     "false_alarm": 0.04375
+    },
+    "Wearable, personal baseline": {
+     "caught": 1.0,
+     "lo": 0.9990405214831674,
+     "hi": 0.9999999999999999,
+     "delay": 10.0,
+     "false_alarm": 0.041
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.09425,
+     "lo": 0.08558064936750087,
+     "hi": 0.10369796744890863,
+     "delay": 28.0,
+     "false_alarm": 0.0405
+    },
+    "Wearable, population range": {
+     "caught": 0.19525,
+     "lo": 0.18326046722878533,
+     "hi": 0.207824334927224,
+     "delay": 17.0,
+     "false_alarm": 0.04525
+    },
+    "Wearable, personal baseline": {
+     "caught": 1.0,
+     "lo": 0.9990405214831674,
+     "hi": 0.9999999999999999,
+     "delay": 13.0,
+     "false_alarm": 0.04525
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.16975,
+     "lo": 0.15843396401575388,
+     "hi": 0.18169977154461392,
+     "delay": 21.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.06425,
+     "lo": 0.057061483204868244,
+     "hi": 0.07227470232255122,
+     "delay": 30.0,
+     "false_alarm": 0.03975
+    },
+    "Wearable, population range": {
+     "caught": 0.138,
+     "lo": 0.1276582543019156,
+     "hi": 0.14903640814427108,
+     "delay": 25.0,
+     "false_alarm": 0.04775
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.4265,
+     "lo": 0.41125088526222636,
+     "hi": 0.4418901580797479,
+     "delay": 27.0,
+     "false_alarm": 0.04925
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.054,
+     "lo": 0.04741386137737403,
+     "hi": 0.061441993459640486,
+     "delay": 30.0,
+     "false_alarm": 0.043
+    },
+    "Wearable, population range": {
+     "caught": 0.1075,
+     "lo": 0.09827462723924005,
+     "hi": 0.11747856339647339,
+     "delay": 27.0,
+     "false_alarm": 0.044
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.23625,
+     "lo": 0.223342954317016,
+     "hi": 0.249663170600613,
+     "delay": 28.0,
+     "false_alarm": 0.046
+    }
+   }
+  ]
+ },
+ "k": {
+  "values": [
+   1,
+   2,
+   4,
+   8,
+   24
+  ],
+  "change": "level",
+  "results": [
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.1595,
+     "lo": 0.14848059364923688,
+     "hi": 0.17117281122072597,
+     "delay": 22.5,
+     "false_alarm": 0.04925
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.69775,
+     "lo": 0.6833340492235144,
+     "hi": 0.7117864770230783,
+     "delay": 23.0,
+     "false_alarm": 0.04525
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.16925,
+     "lo": 0.1579480684281796,
+     "hi": 0.181186626610705,
+     "delay": 21.0,
+     "false_alarm": 0.049
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.765,
+     "lo": 0.751609722837155,
+     "hi": 0.7778817535489237,
+     "delay": 22.0,
+     "false_alarm": 0.045
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.16975,
+     "lo": 0.15843396401575388,
+     "hi": 0.18169977154461392,
+     "delay": 21.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.1725,
+     "lo": 0.16110703905025672,
+     "hi": 0.18452141937826846,
+     "delay": 20.5,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.808,
+     "lo": 0.7955005062275786,
+     "hi": 0.8199084550060527,
+     "delay": 20.0,
+     "false_alarm": 0.04775
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.171,
+     "lo": 0.15964886245839477,
+     "hi": 0.18298247440568094,
+     "delay": 21.0,
+     "false_alarm": 0.04625
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.81,
+     "lo": 0.7975472248357057,
+     "hi": 0.8218578984838582,
+     "delay": 20.0,
+     "false_alarm": 0.0465
+    }
+   }
+  ]
+ },
+ "delta": {
+  "values": [
+   0.1,
+   0.2,
+   0.3,
+   0.5,
+   0.7,
+   1.0
+  ],
+  "change": "level",
+  "results": [
+   {
+    "Lab test, monthly": {
+     "caught": 0.02275,
+     "lo": 0.01856665819284425,
+     "hi": 0.027849164051472305,
+     "delay": 26.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.02975,
+     "lo": 0.02491925723563898,
+     "hi": 0.03548313230944192,
+     "delay": 12.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.0425,
+     "lo": 0.03667497977844836,
+     "hi": 0.04920294306445332,
+     "delay": 30.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.02675,
+     "lo": 0.022185540956787514,
+     "hi": 0.03222260545939438,
+     "delay": 25.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.04425,
+     "lo": 0.0383021886537517,
+     "hi": 0.05107237601434105,
+     "delay": 17.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.1415,
+     "lo": 0.13104241719479331,
+     "hi": 0.15264552890177546,
+     "delay": 30.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.038,
+     "lo": 0.03250432352691623,
+     "hi": 0.04438223462263693,
+     "delay": 27.5,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.07,
+     "lo": 0.06249852053085513,
+     "hi": 0.07832663099362076,
+     "delay": 19.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.3275,
+     "lo": 0.3131277474870635,
+     "hi": 0.3422032726012436,
+     "delay": 28.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.16975,
+     "lo": 0.15843396401575388,
+     "hi": 0.18169977154461392,
+     "delay": 21.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.15875,
+     "lo": 0.147752932566078,
+     "hi": 0.1704019115216601,
+     "delay": 30.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.31175,
+     "lo": 0.2975813990711125,
+     "hi": 0.3262798445904749,
+     "delay": 18.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.98075,
+     "lo": 0.9760077046513187,
+     "hi": 0.9845697567547469,
+     "delay": 15.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.33975,
+     "lo": 0.32523222611101893,
+     "hi": 0.35457528675362576,
+     "delay": 29.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.58925,
+     "lo": 0.5739251350589961,
+     "hi": 0.6044035980257493,
+     "delay": 16.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 1.0,
+     "lo": 0.9990405214831674,
+     "hi": 0.9999999999999999,
+     "delay": 12.0,
+     "false_alarm": 0.047
+    }
+   }
+  ]
+ },
+ "base": {
+  "values": [
+   7,
+   14,
+   28,
+   56
+  ],
+  "change": "level",
+  "results": [
+   {
+    "Lab test, monthly": {
+     "caught": 0.083,
+     "lo": 0.07484516528643867,
+     "hi": 0.09195503979659958,
+     "delay": 33.0,
+     "false_alarm": 0.0455
+    },
+    "Wearable, population range": {
+     "caught": 0.166,
+     "lo": 0.15479064613266239,
+     "hi": 0.17785028551658164,
+     "delay": 21.0,
+     "false_alarm": 0.0475
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.29775,
+     "lo": 0.28377861215535227,
+     "hi": 0.31210949690470635,
+     "delay": 21.0,
+     "false_alarm": 0.044
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.07725,
+     "lo": 0.06937561382908243,
+     "hi": 0.08593562525689936,
+     "delay": 29.0,
+     "false_alarm": 0.044
+    },
+    "Wearable, population range": {
+     "caught": 0.166,
+     "lo": 0.15479064613266239,
+     "hi": 0.17785028551658164,
+     "delay": 21.0,
+     "false_alarm": 0.0465
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.5625,
+     "lo": 0.5470736646958373,
+     "hi": 0.5778064004895586,
+     "delay": 22.0,
+     "false_alarm": 0.04975
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.0795,
+     "lo": 0.07151435000411377,
+     "hi": 0.0882925714285423,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.16975,
+     "lo": 0.15843396401575388,
+     "hi": 0.18169977154461392,
+     "delay": 21.0,
+     "false_alarm": 0.04825
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.80475,
+     "lo": 0.792175665072776,
+     "hi": 0.8167395327712146,
+     "delay": 20.0,
+     "false_alarm": 0.047
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.08,
+     "lo": 0.07198989518725699,
+     "hi": 0.08881606676688225,
+     "delay": 31.0,
+     "false_alarm": 0.047
+    },
+    "Wearable, population range": {
+     "caught": 0.17925,
+     "lo": 0.16767277686407653,
+     "hi": 0.1914427286044714,
+     "delay": 20.0,
+     "false_alarm": 0.049
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.94575,
+     "lo": 0.9382930293486156,
+     "hi": 0.9523515955536281,
+     "delay": 19.0,
+     "false_alarm": 0.0395
+    }
+   }
+  ]
+ },
+ "vol": {
+  "values": [
+   1.5,
+   2,
+   3,
+   4
+  ],
+  "change": "volatility",
+  "results": [
+   {
+    "Lab test, monthly": {
+     "caught": 0.03625,
+     "lo": 0.030888214732104062,
+     "hi": 0.042501701592258016,
+     "delay": 27.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.09025,
+     "lo": 0.08175875058098299,
+     "hi": 0.09952754206356117,
+     "delay": 19.0,
+     "false_alarm": 0.0465
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.263,
+     "lo": 0.24958817394081384,
+     "hi": 0.27686661887616465,
+     "delay": 27.0,
+     "false_alarm": 0.04975
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.06125,
+     "lo": 0.05423149996245253,
+     "hi": 0.06911044243606791,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.25425,
+     "lo": 0.24099581849609197,
+     "hi": 0.26797576519493105,
+     "delay": 23.0,
+     "false_alarm": 0.0465
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.68375,
+     "lo": 0.6691686682362563,
+     "hi": 0.6979787234088077,
+     "delay": 20.0,
+     "false_alarm": 0.04975
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.15175,
+     "lo": 0.1409657939959473,
+     "hi": 0.16320248279102642,
+     "delay": 28.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.76,
+     "lo": 0.7465190914481049,
+     "hi": 0.7729819797231422,
+     "delay": 17.0,
+     "false_alarm": 0.0465
+    },
+    "Wearable, personal baseline": {
+     "caught": 0.987,
+     "lo": 0.9829930438064468,
+     "hi": 0.9900724241181583,
+     "delay": 10.0,
+     "false_alarm": 0.04975
+    }
+   },
+   {
+    "Lab test, monthly": {
+     "caught": 0.279,
+     "lo": 0.2653177041077547,
+     "hi": 0.2931063853966852,
+     "delay": 27.0,
+     "false_alarm": 0.04175
+    },
+    "Wearable, population range": {
+     "caught": 0.982,
+     "lo": 0.9773934247549978,
+     "hi": 0.9856816379547757,
+     "delay": 9.0,
+     "false_alarm": 0.0465
+    },
+    "Wearable, personal baseline": {
+     "caught": 1.0,
+     "lo": 0.9990405214831674,
+     "hi": 0.9999999999999999,
+     "delay": 5.0,
+     "false_alarm": 0.04975
+    }
+   }
+  ]
+ }
+}
