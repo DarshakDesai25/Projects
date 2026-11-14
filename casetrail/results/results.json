@@ -1,0 +1,1642 @@
+{
+  "small": {
+    "cases": 100,
+    "files_per_case": 6.7,
+    "pages_per_case": 7.0,
+    "runs": {
+      "workflow_1": {
+        "recall": 0.859,
+        "precision": 1.0,
+        "recall_95": [
+          0.854,
+          0.865
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 320,
+            "claims": 320,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {
+          "MISSED": 160
+        },
+        "removed": {}
+      },
+      "workflow_1_verified": {
+        "recall": 0.859,
+        "precision": 1.0,
+        "recall_95": [
+          0.854,
+          0.865
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 320,
+            "claims": 320,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {
+          "MISSED": 160
+        },
+        "removed": {}
+      },
+      "workflow_2": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_2_verified": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_4": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_4_verified": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_8": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_8_verified": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_16": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_16_verified": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "workflow_all_verified": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "facts_table": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 7.0,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      },
+      "facts_table_verified": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "recall_95": [
+          1.0,
+          1.0
+        ],
+        "pages_per_case": 7.0,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 480,
+            "found": 480,
+            "claims": 480,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 281,
+            "found": 281,
+            "claims": 281,
+            "empty_right": 3,
+            "empty_gold": 3
+          },
+          "prior": {
+            "gold": 72,
+            "found": 72,
+            "claims": 72,
+            "empty_right": 41,
+            "empty_gold": 41
+          },
+          "mri": {
+            "gold": 148,
+            "found": 148,
+            "claims": 148,
+            "empty_right": 26,
+            "empty_gold": 26
+          },
+          "contradictions": {
+            "gold": 57,
+            "found": 57,
+            "claims": 57,
+            "empty_right": 57,
+            "empty_gold": 57
+          }
+        },
+        "mistakes": {},
+        "removed": {}
+      }
+    }
+  },
+  "large": {
+    "cases": 100,
+    "files_per_case": 16.7,
+    "pages_per_case": 31.4,
+    "runs": {
+      "workflow_1": {
+        "recall": 0.476,
+        "precision": 0.948,
+        "recall_95": [
+          0.461,
+          0.491
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 452,
+            "claims": 528,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1753,
+            "claims": 1753,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 90,
+            "empty_right": 20,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 153,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "NEGATION_ERROR": 88,
+          "MISSED": 2777,
+          "WRONG_PERSON": 42,
+          "RETRACTED": 7,
+          "WRONG_PERSON_FILE": 2
+        },
+        "removed": {}
+      },
+      "workflow_1_verified": {
+        "recall": 0.476,
+        "precision": 0.997,
+        "recall_95": [
+          0.461,
+          0.491
+        ],
+        "pages_per_case": 4.7,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 452,
+            "claims": 459,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1753,
+            "claims": 1753,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 46,
+            "empty_right": 39,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 134,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "MISSED": 2777,
+          "RETRACTED": 7
+        },
+        "removed": {
+          "UNSUPPORTED": 132
+        }
+      },
+      "workflow_2": {
+        "recall": 0.552,
+        "precision": 0.905,
+        "recall_95": [
+          0.538,
+          0.567
+        ],
+        "pages_per_case": 7.5,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 827,
+            "claims": 975,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1782,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 188,
+            "empty_right": 0,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 153,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "NEGATION_ERROR": 173,
+          "MISSED": 2373,
+          "WRONG_PERSON": 54,
+          "WRONG_PERSON_FILE": 71,
+          "RETRACTED": 11
+        },
+        "removed": {}
+      },
+      "workflow_2_verified": {
+        "recall": 0.552,
+        "precision": 0.996,
+        "recall_95": [
+          0.538,
+          0.567
+        ],
+        "pages_per_case": 7.5,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 827,
+            "claims": 838,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1782,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 46,
+            "empty_right": 39,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 134,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "MISSED": 2373,
+          "RETRACTED": 11
+        },
+        "removed": {
+          "UNSUPPORTED": 212,
+          "WRONG_PERSON_FILE": 100
+        }
+      },
+      "workflow_4": {
+        "recall": 0.686,
+        "precision": 0.891,
+        "recall_95": [
+          0.673,
+          0.7
+        ],
+        "pages_per_case": 10.2,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 1538,
+            "claims": 1813,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1783,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 188,
+            "empty_right": 0,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 153,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 48,
+            "empty_right": 44,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "NEGATION_ERROR": 300,
+          "MISSED": 1662,
+          "WRONG_PERSON": 54,
+          "RETRACTED": 11,
+          "WRONG_PERSON_FILE": 72,
+          "EXTRA": 9
+        },
+        "removed": {}
+      },
+      "workflow_4_verified": {
+        "recall": 0.686,
+        "precision": 0.997,
+        "recall_95": [
+          0.673,
+          0.7
+        ],
+        "pages_per_case": 10.2,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 1538,
+            "claims": 1549,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1782,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 46,
+            "empty_right": 39,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 134,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "MISSED": 1662,
+          "RETRACTED": 11
+        },
+        "removed": {
+          "UNSUPPORTED": 368,
+          "WRONG_PERSON_FILE": 110
+        }
+      },
+      "workflow_8": {
+        "recall": 0.885,
+        "precision": 0.883,
+        "recall_95": [
+          0.878,
+          0.893
+        ],
+        "pages_per_case": 13.8,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 2592,
+            "claims": 3038,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1789,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 188,
+            "empty_right": 0,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 153,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 48,
+            "empty_right": 44,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "NEGATION_ERROR": 471,
+          "MISSED": 608,
+          "WRONG_PERSON": 54,
+          "WRONG_PERSON_FILE": 78,
+          "EXTRA": 9,
+          "RETRACTED": 11
+        },
+        "removed": {}
+      },
+      "workflow_8_verified": {
+        "recall": 0.885,
+        "precision": 0.998,
+        "recall_95": [
+          0.878,
+          0.893
+        ],
+        "pages_per_case": 13.8,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 2592,
+            "claims": 2603,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1782,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 46,
+            "empty_right": 39,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 134,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "MISSED": 608,
+          "RETRACTED": 11
+        },
+        "removed": {
+          "UNSUPPORTED": 593,
+          "WRONG_PERSON_FILE": 116
+        }
+      },
+      "workflow_16": {
+        "recall": 0.992,
+        "precision": 0.85,
+        "recall_95": [
+          0.989,
+          0.995
+        ],
+        "pages_per_case": 14.9,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 3157,
+            "claims": 3812,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1882,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 188,
+            "empty_right": 0,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 153,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 48,
+            "empty_right": 44,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "NEGATION_ERROR": 566,
+          "WRONG_PERSON_FILE": 296,
+          "WRONG_PERSON": 54,
+          "EXTRA": 9,
+          "MISSED": 43
+        },
+        "removed": {}
+      },
+      "workflow_16_verified": {
+        "recall": 0.992,
+        "precision": 1.0,
+        "recall_95": [
+          0.989,
+          0.995
+        ],
+        "pages_per_case": 14.9,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 3157,
+            "claims": 3157,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1782,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 46,
+            "empty_right": 39,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 134,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "MISSED": 43
+        },
+        "removed": {
+          "UNSUPPORTED": 725,
+          "WRONG_PERSON_FILE": 334
+        }
+      },
+      "workflow_all": {
+        "recall": 0.992,
+        "precision": 0.85,
+        "recall_95": [
+          0.989,
+          0.995
+        ],
+        "pages_per_case": 14.9,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 3157,
+            "claims": 3812,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1882,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 188,
+            "empty_right": 0,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 153,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 48,
+            "empty_right": 44,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "NEGATION_ERROR": 566,
+          "WRONG_PERSON_FILE": 296,
+          "WRONG_PERSON": 54,
+          "EXTRA": 9,
+          "MISSED": 43
+        },
+        "removed": {}
+      },
+      "workflow_all_verified": {
+        "recall": 0.992,
+        "precision": 1.0,
+        "recall_95": [
+          0.989,
+          0.995
+        ],
+        "pages_per_case": 14.9,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 3157,
+            "claims": 3157,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1782,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 46,
+            "empty_right": 39,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 134,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "MISSED": 43
+        },
+        "removed": {
+          "UNSUPPORTED": 725,
+          "WRONG_PERSON_FILE": 334
+        }
+      },
+      "facts_table": {
+        "recall": 0.992,
+        "precision": 0.85,
+        "recall_95": [
+          0.989,
+          0.995
+        ],
+        "pages_per_case": 31.4,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 3157,
+            "claims": 3812,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1882,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 188,
+            "empty_right": 0,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 153,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 48,
+            "empty_right": 44,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "NEGATION_ERROR": 566,
+          "WRONG_PERSON_FILE": 296,
+          "WRONG_PERSON": 54,
+          "EXTRA": 9,
+          "MISSED": 43
+        },
+        "removed": {}
+      },
+      "facts_table_verified": {
+        "recall": 0.992,
+        "precision": 1.0,
+        "recall_95": [
+          0.989,
+          0.995
+        ],
+        "pages_per_case": 31.4,
+        "by_question": {
+          "accident": {
+            "gold": 100,
+            "found": 100,
+            "claims": 100,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "diagnoses": {
+            "gold": 3157,
+            "found": 3157,
+            "claims": 3157,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "medications": {
+            "gold": 1782,
+            "found": 1782,
+            "claims": 1782,
+            "empty_right": 0,
+            "empty_gold": 0
+          },
+          "prior": {
+            "gold": 70,
+            "found": 46,
+            "claims": 46,
+            "empty_right": 39,
+            "empty_gold": 39
+          },
+          "mri": {
+            "gold": 134,
+            "found": 134,
+            "claims": 134,
+            "empty_right": 33,
+            "empty_gold": 33
+          },
+          "contradictions": {
+            "gold": 58,
+            "found": 39,
+            "claims": 39,
+            "empty_right": 49,
+            "empty_gold": 49
+          }
+        },
+        "mistakes": {
+          "MISSED": 43
+        },
+        "removed": {
+          "UNSUPPORTED": 725,
+          "WRONG_PERSON_FILE": 334
+        }
+      }
+    }
+  }
+}
